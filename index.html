@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Super games</title>
+
+    <style>
+        body {
+            background-image: url("minecraft.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+}
+
+        
+        h1 { 
+            color: rgb(255, 208, 0) ;
+        } 
+        p {
+            font-weight: bold;
+        }
+        button {
+            background-color: lightblue;
+            color: black;
+            border: 3px solid lime;
+            border-radius: 12px;
+            padding: 15px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>Welkom bij Super Games!</h1>
+    <p>Hier vind je de leukste games.</p>
+
+    <a href=" https://poki.com/nl">
+        <button>Ga naar de games</button>
+    </a>
+
+    <h1 id="punten">Punten: 0</h1>
+    <h2>minigame!</h2>
+    <button onclick="geefPunt()">Klik!</button>
+
+    <script>
+        let score = 0;
+
+        function geefPunt() {
+        score = score + 1;
+        document.getElementById("punten").textContent = "Punten: " + score;
+    }
+    </script>    
+</body>
+</html>
